@@ -34,7 +34,7 @@ const Todo = () => {
     );
   };
   useEffect(() => {
-    localStorage.setItem("TodoList", JSON.stringify(todolist));
+    localStorage.setItem("TodoList Mohan", JSON.stringify(todolist));
   }, [todolist]);
   return (
     <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-137 rounded-xl">
