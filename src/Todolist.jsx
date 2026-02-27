@@ -8,7 +8,7 @@ const Todolist = ({ todolist, delTodo, mark }) => {
       {todolist.map((todoitem) => (
         <li key={todoitem.id} id={todoitem.id}>
           {
-            <div className="flex justify-between my-2">
+            <div className="flex justify-between my-2 text-center">
               <div className="flex items-center ">
                 <div onClick={() => mark(todoitem.id)} className="border-2 border-orange-500 text-2xl rounded-full mx-3 cursor-pointer">
                   {todoitem.isComplete ? <MdDone /> : <RxCross2 />}
@@ -19,9 +19,9 @@ const Todolist = ({ todolist, delTodo, mark }) => {
                 onClick={() => {
                   delTodo(todoitem.id);
                 }}
-                className="text-xl md:text-2xl"
+                className="place-self-center text-xl md:text-2xl"
               >
-                <RiDeleteBin6Line />
+                <RiDeleteBin6Line/>
               </div>
             </div>
           }
