@@ -37,9 +37,9 @@ const Todo = () => {
     localStorage.setItem("TodoList Mohan", JSON.stringify(todolist));
   }, [todolist]);
   return (
-    <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-137 rounded-xl">
+    <div className="bg-white place-self-center min-w-full flex flex-col p-7 min-h-full rounded-xl md:min-w-md md:min-h-148">
       {/* -----title----- */}
-      <div className="text-3xl font-semibold flex justify-between">
+      <div className="text-2xl md:text-3xl font-semibold flex justify-between">
         <h2>Todo List</h2>
         <CiBoxList />
       </div>
@@ -48,13 +48,13 @@ const Todo = () => {
       <div className="flex items-center justify-between my-7 bg-gray-200 rounded-full">
         <input
           ref={inputRef}
-          className="border-0 outline-0 bg-transparent px-4"
+          className="border-0 px-2 outline-0 bg-transparent md:px-4"
           type="text"
           placeholder="Add your task"
         />
         <button
           onClick={add}
-          className="border-0 rounded-full bg-orange-500 px-4 p-2 text-lg font-medium text-white"
+          className="border-0 rounded-full bg-orange-500 md:bg-blue-700 px-4 p-2 md:text-lg font-medium text-white"
         >
           ADD +
         </button>

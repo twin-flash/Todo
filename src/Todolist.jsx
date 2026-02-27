@@ -19,7 +19,7 @@ const Todolist = ({ todolist, delTodo, mark }) => {
                 onClick={() => {
                   delTodo(todoitem.id);
                 }}
-                className="text-2xl"
+                className="text-xl md:text-2xl"
               >
                 <RiDeleteBin6Line />
               </div>
