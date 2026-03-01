@@ -37,7 +37,7 @@ const Todo = () => {
     localStorage.setItem("TodoList Mohan", JSON.stringify(todolist));
   }, [todolist]);
   return (
-    <div className="bg-white place-self-center min-w-full flex flex-col p-7 min-h-full rounded-xl md:min-w-md md:min-h-148">
+    <div className="bg-white place-self-center min-w-full flex flex-col p-7 min-h-148 rounded-xl md:min-w-md md:min-h-148">
       {/* -----title----- */}
       <div className="text-2xl md:text-3xl font-semibold flex justify-between">
         <h2>Todo List</h2>
